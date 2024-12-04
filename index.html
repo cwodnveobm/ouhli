@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SXO Resume Builder Partnership Form</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fff8e1; /* Light saffron */
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 2rem auto;
+            background: #ffffff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border: 3px solid #ff9933; /* Saffron border */
+        }
+        h1 {
+            text-align: center;
+            color: #008000; /* Green for Indian-style theme */
+            font-family: 'Georgia', serif;
+        }
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #ff9933; /* Saffron labels */
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="file"],
+        input[type="url"] {
+            width: 100%;
+            padding: 0.8rem;
+            border: 2px solid #008000; /* Green borders */
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+        input[type="checkbox"] {
+            margin-right: 0.5rem;
+        }
+        input:focus {
+            border-color: #ff9933; /* Saffron focus */
+            outline: none;
+            background: #fffaf0; /* Subtle background highlight */
+        }
+        .progress {
+            height: 8px;
+            background: #ddd;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+        .progress-bar {
+            width: 0%;
+            height: 100%;
+            background: linear-gradient(to right, #ff9933, #008000); /* Indian flag gradient */
+            transition: width 0.4s ease;
+        }
+        .error {
+            color: #ff0000;
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+        }
+        .terms {
+            margin: 1.5rem 0;
+            background: #f5f5f5;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            color: #555;
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+        button {
+            width: 100%;
+            padding: 1rem;
+            background: linear-gradient(to right, #008000, #ff9933); /* Indian flag gradient */
+            color: #ffffff;
+            border: none;
+            border-radius: 4px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            font-family: 'Georgia', serif;
+        }
+        button:hover {
+            background: #ff9933;
+        }
+        footer {
+            text-align: center;
+            margin-top: 2rem;
+            color: #555;
+            font-size: 0.9rem;
+        }
+        footer a {
+            color: #008000;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>SXO Partnership Form</h1>
+        <div class="progress">
+            <div class="progress-bar"></div>
+        </div>
+        <form id="registrationForm" action="mailto:sxoresumebulider@f5.si" method="POST" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+                <div class="error" id="nameError"></div>
+            </div>
+            <div class="form-group">
+                <label for="address">Address</label>
+                <input type="text" id="address" name="address" required>
+                <div class="error" id="addressError"></div>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="text" id="phone" name="phone" required>
+                <div class="error" id="phoneError"></div>
+            </div>
+            <div class="form-group">
+                <label for="linkedin">LinkedIn Profile</label>
+                <input type="url" id="linkedin" name="linkedin" placeholder="https://linkedin.com/in/username">
+            </div>
+            <div class="form-group">
+                <label for="instagram">Instagram Profile</label>
+                <input type="url" id="instagram" name="instagram" placeholder="https://instagram.com/username">
+            </div>
+            <div class="form-group">
+                <label for="facebook">Facebook Profile</label>
+                <input type="url" id="facebook" name="facebook" placeholder="https://facebook.com/username">
+            </div>
+            <div class="form-group">
+                <label for="aadhaar">Aadhaar Card (Image)</label>
+                <input type="file" id="aadhaar" name="aadhaar" accept="image/*" required>
+                <div class="error" id="aadhaarError"></div>
+            </div>
+            <div class="terms">
+                <h4>Terms and Conditions</h4>
+                <p><strong>Effective Date:</strong> October 3, 2024</p>
+                <p><strong>Last Updated:</strong> December 4, 2024</p>
+                <p>These Terms and Conditions govern the partnership between freelancers ("Builders") and By using the SXO Resume Builder platform, Builders agree to these terms.</p>
+                <h5>1. Builder Obligations</h5>
+                <ul>
+                    <li>Providing high-quality and accurate resumes to Users.</li>
+                    <li>Maintaining the confidentiality of User data processed via SXO.</li>
+                </ul>
+                <h5>2. Data Privacy</h5>
+                <ul>
+                    <li>Complying with privacy laws in India, including the Information Technology Act, 2000.</li>
+                    <li>Ensuring secure handling of all data.</li>
+                </ul>
+                <h5>3. Partnership Termination</h5>
+                <ul>
+                    <li>Violation of these terms.</li>
+                    <li>Illegal or unethical practices.</li>
+                    <li>Fraudulent or unauthorized use of the Platform.</li>
+                </ul>
+                <h5>4. Liability and Indemnity</h5>
+                <ul>
+                    <li>Indemnify SXO against claims, legal fees, or damages.</li>
+                </ul>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="agree" name="agree" required>
+                <label for="agree">I agree to the terms and conditions</label>
+                <div class="error" id="agreeError"></div>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+        <footer>
+            <p>Powered by <a href="https://sxoresumebulider.vercel.app/" target="_blank">SXO Resume Builder</a></p>
+        </footer>
+    </div>
+
+    <script>
+        const form = document.getElementById('registrationForm');
+        const progressBar = document.querySelector('.progress-bar');
+
+        form.addEventListener('input', updateProgress);
+
+        function updateProgress() {
+            const fields = Array.from(form.querySelectorAll('input[required]'));
+            const filledFields = fields.filter(field => field.value.trim() !== '');
+            const progress = (filledFields.length / fields.length) * 100;
+            progressBar.style.width = `${progress}%`;
+        }
+
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            let isValid = true;
+
+            // Validate name
+            const name = document.getElementById('name');
+            if (name.value.trim() === '') {
+                document.getElementById('nameError').textContent = 'Name is required.';
+                isValid = false;
+            } else {
+                document.getElementById('nameError').textContent = '';
+            }
+
+            // Validate address
+            const address = document.getElementById('address');
+            if (address.value.trim() === '') {
+                document.getElementById('addressError').textContent = 'Address is required.';
+                isValid = false;
+            } else {
+                document.getElementById('addressError').textContent = '';
+            }
+
+            // Validate phone number
+            const phone = document.getElementById('phone');
+            if (phone.value.trim() === '') {
+                document.getElementById('phoneError').textContent = 'Phone number is required.';
+                isValid = false;
+            } else {
+                document.getElementById('phoneError').textContent = '';
+            }
+
+            // Validate Aadhaar
+            const aadhaar = document.getElementById('aadhaar');
+            if (!aadhaar.files.length) {
+                document.getElementById('aadhaarError').textContent = 'Aadhaar card image is required.';
+                isValid = false;
+            } else {
+                document.getElementById('aadhaarError').textContent = '';
+            }
+
+            // Validate checkbox
+            const agree = document.getElementById('agree');
+            if (!agree.checked) {
+                document.getElementById('agreeError').textContent = 'You must agree to the terms and conditions.';
+                isValid = false;
+            } else {
+                document.getElementById('agreeError').textContent = '';
+            }
+
+            // If all is valid, submit form
+            if (isValid) {
+                form.submit();
+            }
+        });
+    </script>
+</body>
+</html>
